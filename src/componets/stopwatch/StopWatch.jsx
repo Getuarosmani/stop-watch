@@ -23,7 +23,7 @@ function StopWatch() {
 
     function start() {
         setIsRuning(true);
-        startTimeRef.current = Date.now();
+        startTimeRef.current = Date.now() - elapsedTime;
     }
 
     function stop() {
